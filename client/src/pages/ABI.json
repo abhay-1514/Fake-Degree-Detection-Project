@@ -1,0 +1,192 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "getAllStudentDetails",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "rollNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "marks",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "deenPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "registrarPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "VCPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "hashcode",
+						"type": "bytes32"
+					}
+				],
+				"internalType": "struct Degree.StudentDetails[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_hash",
+				"type": "bytes32"
+			}
+		],
+		"name": "getStudentDetailsByHash",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "rollNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "marks",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "deenPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "registrarPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "VCPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "hashcode",
+						"type": "bytes32"
+					}
+				],
+				"internalType": "struct Degree.StudentDetails",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "getStudentDetailsByIndex",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "rollNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "marks",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "deenPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "registrarPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "VCPermission",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "hashcode",
+						"type": "bytes32"
+					}
+				],
+				"internalType": "struct Degree.StudentDetails",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_rollNo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_marks",
+				"type": "uint256"
+			}
+		],
+		"name": "registrarAdvice",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
