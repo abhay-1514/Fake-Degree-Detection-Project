@@ -22,7 +22,14 @@ const Wallet = ({saveState})=>{
             console.error(error)
         }
     }
-    return<><button onClick={connectWallet}>Connect Wallet</button>
+    return<>
+    <div className="wallet_header">
+        <span>Fake Degree</span> <p>Detector</p>
+    </div>
+    <div className="connect_wallet_section todo_btn">
+        <p>Please connect the metamask wallet to access the App</p>
+        <button onClick={connectWallet}>Connect Wallet</button>
+    </div>
     </>
 }
 export default Wallet;  

@@ -9,7 +9,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-const web3 = new Web3("https://sepolia.infura.io/v3/7d8ed6b24d6d41c780920924f9060ccf");
+const web3 = new Web3("https://rpc2.sepolia.org");
 const contractAddress = "0x0aead1aa1dd33d2351bd8daeb73cad3a193fddd5";
 const contract = new web3.eth.Contract(ABI,contractAddress);
 //console.log(contract)
