@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 const Navigation = ()=>{
     return(<>
     <header>
-        <div className='logo'>Fake Degree Prevention System</div>
+        <div className='logo'>Fake Degree Prevention</div>
             <nav>
                 <ul>
                     <li>

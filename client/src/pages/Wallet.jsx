@@ -11,7 +11,7 @@ const Wallet = ({saveState})=>{
                 const accounts = await window.ethereum.request({
                     method:"eth_requestAccounts"
                 })
-                const contractAddress = "0x0aead1aa1dd33d2351bd8daeb73cad3a193fddd5";
+                const contractAddress = "0x8ff6611ba6ec27f5608F568c7529E56Da52E209f";
                 const contract = new web3.eth.Contract(ABI,contractAddress);
                 saveState({web3:web3,contract:contract,account:accounts[0]})
                 navigateTo("/all-details")
@@ -24,7 +24,7 @@ const Wallet = ({saveState})=>{
     }
     return<>
     <div className="wallet_header">
-        <span>Fake Degree</span> <p>Detector</p>
+        <span>Fake Degree</span> <p>PREVENTION SYSTEM</p>
     </div>
     <div className="connect_wallet_section todo_btn">
         <p>Please connect the metamask wallet to access the App</p>
