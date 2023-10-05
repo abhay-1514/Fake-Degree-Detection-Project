@@ -31,7 +31,7 @@ const closeModal = ()=>{
       if(data.status===200){
         if(contract && contract.methods){
           await contract.methods.registrarAdvice(studentRoll,studentName,studentMarks).send({from:account})
-          setModalContent(`Student ${studentName} added at ${studentRoll}`);
+          setModalContent(`Student ${studentName} added at ${studentRoll} Roll Number`);
         }
       }else{
           alert("Student Details cannot be Added")
