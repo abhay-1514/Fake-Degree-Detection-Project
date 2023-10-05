@@ -1,16 +1,17 @@
-// contract address = 0x0aead1aa1dd33d2351bd8daeb73cad3a193fddd5
+// contract address = 0x8ff6611ba6ec27f5608F568c7529E56Da52E209f
 
 const express = require ('express')
 const cors = require("cors")
 const ABI = require ("./ABI.json");
 const {Web3} = require("web3");
+const PORT = 3000;
 
 const app = express();
 app.use(cors())
 app.use(express.json())
 
-const web3 = new Web3("https://rpc2.sepolia.org");
-const contractAddress = "0x0aead1aa1dd33d2351bd8daeb73cad3a193fddd5";
+const web3 = new Web3("https://palpable-proud-meme.ethereum-sepolia.discover.quiknode.pro/626991c319722a29138013fe2b9d9d2083bde9fe/");
+const contractAddress = "0x8ff6611ba6ec27f5608F568c7529E56Da52E209f";
 const contract = new web3.eth.Contract(ABI,contractAddress);
 //console.log(contract)
 
@@ -100,8 +101,6 @@ app.get("/api/ethereum/all-details", async (req, res) => {
     }
 });
 
-
-const PORT = 3000;
 app.listen(PORT,()=>{
     console.log(`Server Running at Port ${PORT}`)
 })

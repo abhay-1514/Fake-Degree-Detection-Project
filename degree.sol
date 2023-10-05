@@ -27,7 +27,7 @@ function registrarAdvice(uint _rollNo, string memory _name, uint _marks) public 
     require(!usedRollNumbers[_rollNo], "Roll number already used");
     if (_marks >= 33) {
         bytes32 hashNumber = keccak256(abi.encodePacked(_rollNo,_name));
-        StudentDetails memory s1 = StudentDetails(_rollNo, _name, _marks,"Pass", "Pass", "Pass",hashNumber);
+        StudentDetails memory s1 = StudentDetails(_rollNo, _name, _marks,"Approved", "Approved", "Approved",hashNumber);
         passesList.push(s1);
         hashToIndex[hashNumber] = passesList.length - 1;
         usedRollNumbers[_rollNo] = true; // Mark the roll number as used
