@@ -13,14 +13,15 @@ app.use(express.json())
 //QuickNode
 //const web3 = new Web3("https://palpable-proud-meme.ethereum-sepolia.discover.quiknode.pro/626991c319722a29138013fe2b9d9d2083bde9fe/");
 
-//ALchemy
-const web3 = new Web3("https://eth-sepolia.g.alchemy.com/v2/B_FJGxu2hoxkPt24m5_I3c3lpyHKr1_e");
+//Alchemy
+//const web3 = new Web3("https://eth-sepolia.g.alchemy.com/v2/B_FJGxu2hoxkPt24m5_I3c3lpyHKr1_e");
 
 //Infura
-//const web3 = new Web3("https://sepolia.infura.io/v3/5ec3befe5caf406fb96a164b3fc16128");
+const web3 = new Web3("https://sepolia.infura.io/v3/5ec3befe5caf406fb96a164b3fc16128");
 
 //Moralis
 //const web3 = new Web3("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjRjNDk3MjIyLWQ4NDMtNDEzYS1iNDE2LTk1Mjc4YWM2YTFiYSIsIm9yZ0lkIjoiMzYwMjI0IiwidXNlcklkIjoiMzcwMjEzIiwidHlwZUlkIjoiZTljMzYwNDktZDU3YS00NzQyLTgwNWUtMzBjZTk5YTdiYmJhIiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE2OTY2OTk3OTksImV4cCI6NDg1MjQ1OTc5OX0.gBC6Q5EFBNbPqXWBYrK0aWQqXTxVQbxv8-OT1x8isKA");
+
 const contractAddress = "0x8ff6611ba6ec27f5608F568c7529E56Da52E209f";
 const contract = new web3.eth.Contract(ABI,contractAddress);
 //console.log(contract)
